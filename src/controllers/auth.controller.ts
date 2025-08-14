@@ -62,7 +62,7 @@ export const register = async (req: Request, res: Response) => {
 			goal,
 			period,
 			authProviders: ['password'],
-			isFirstRender: isFirstRender ?? true
+			isFirstRender: false
 		})
 
 		return res.status(201).json(buildAuthResponse(user))
