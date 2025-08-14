@@ -1,0 +1,57 @@
+{
+	"name": "infeely_server",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"dev": "ts-node-dev --respawn --transpile-only src/server.ts",
+		"build": "tsc",
+		"start": "node dist/server.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Evgenija-P/inFeely_server.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"type": "commonjs",
+	"bugs": {
+		"url": "https://github.com/Evgenija-P/inFeely_server/issues"
+	},
+	"homepage": "https://github.com/Evgenija-P/inFeely_server#readme",
+	"dependencies": {
+		"apple-signin-auth": "^2.0.0",
+		"bcrypt": "^6.0.0",
+		"cookie-parser": "^1.4.7",
+		"cors": "^2.8.5",
+		"dotenv": "^17.2.1",
+		"express": "^5.1.0",
+		"google-auth-library": "^10.2.1",
+		"jsonwebtoken": "^9.0.2",
+		"mongoose": "^8.17.1",
+		"morgan": "^1.10.1",
+		"multer": "^2.0.2",
+		"multer-storage-cloudinary": "^4.0.0",
+		"passport": "^0.7.0",
+		"passport-apple": "^2.0.2",
+		"passport-google-oauth20": "^2.0.0",
+		"zod": "^4.0.17"
+	},
+	"devDependencies": {
+		"@trivago/prettier-plugin-sort-imports": "^5.2.2",
+		"@types/bcrypt": "^6.0.0",
+		"@types/cookie-parser": "^1.4.9",
+		"@types/cors": "^2.8.19",
+		"@types/express": "^5.0.3",
+		"@types/jsonwebtoken": "^9.0.10",
+		"@types/morgan": "^1.9.10",
+		"@types/multer": "^2.0.0",
+		"@types/node": "^24.2.1",
+		"eslint": "^9.33.0",
+		"nodemon": "^3.1.10",
+		"prettier": "^3.6.2",
+		"ts-node-dev": "^2.0.0",
+		"typescript": "^5.9.2"
+	}
+}

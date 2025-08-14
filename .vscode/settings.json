@@ -1,0 +1,14 @@
+{
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit",
+    "source.organizeImports": "explicit",
+    "source.sortMembers": "explicit"
+  },
+  "cSpell.language": "en, ua",
+  "cSpell.languageSettings": [],
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  "powershell.codeFormatting.ignoreOneLineBlock": true,
+  "html.format.contentUnformatted": ""
+}
