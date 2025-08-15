@@ -28,7 +28,7 @@ const mealSchema = new Schema<IMeal>({
 		required: true
 	},
 	description: String,
-	date: { type: String, required: true }, // формат YYYY-MM-DD
+	date: { type: String }, // формат YYYY-MM-DD
 	dateTime: { type: Date, required: true },
 	images: [String],
 	place: String,
