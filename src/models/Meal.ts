@@ -1,6 +1,7 @@
 import mongoose, { Document, Schema } from 'mongoose'
 
 export interface IMeal extends Document {
+	_id: mongoose.Types.ObjectId
 	label: 'breakfast' | 'lunch' | 'dinner' | 'dessert' | 'snack' | 'drink'
 	description?: string
 	date: string // YYYY-MM-DD
@@ -22,6 +23,7 @@ export interface IMeal extends Document {
 }
 
 const mealSchema = new Schema<IMeal>({
+	_id: { type: Schema.Types.ObjectId, required: true },
 	label: {
 		type: String,
 		enum: ['breakfast', 'lunch', 'dinner', 'dessert', 'snack', 'drink'],
